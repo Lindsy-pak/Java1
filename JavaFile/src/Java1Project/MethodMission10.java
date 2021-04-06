@@ -42,13 +42,14 @@ public class MethodMission10 {
 		}
 		System.out.println(result);
 	}
-
-	public static void printMenu3(Drink[] arr) {
-		String result = "<메뉴>\n0. 종료 \n"; /* result를 쓰기 위해서 초기값을 무조건 선언 해 주어야한다.  */
-		for (int i = 0; i < arr.length; i++) {
-			result += String.format("%d. %s (%,d원)\n", i + 1, arr[i].nm, arr[i].price);
+	public static void printMenu3 (Drink[] arr) {
+		String result = "<메뉴>\n0. 종료 \n";
+		for(int i = 0; i < arr.length; i++) {
+			result += String.format("%d. %s (%,d원)\n", i+1, arr[i].nm, arr[i].price);
 		}
 		System.out.println(result);
 	}
+
+
 
 }
