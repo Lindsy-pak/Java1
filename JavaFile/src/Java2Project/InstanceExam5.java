@@ -12,6 +12,8 @@ public class InstanceExam5 {
 		System.out.println(carArr[0]); /* 주소값안에는 아직 값이 없어서 null이다 */
 		
 		/* void는 리턴값이 없다. 메소드 밖으로 나가지않음  비보이드는 어떤 값이든 나간다.  */
+		
+		//똑같은 이름의 클래스를 같은 패키지 안에 만들지 못함. 다른 클래스에 Car를 더이상 만들지 못함
 	}
 
 }

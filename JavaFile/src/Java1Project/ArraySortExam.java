@@ -6,6 +6,9 @@ public class ArraySortExam {
 
 	public static void main(String[] args) {
 		// 배열정리 예제
+		
+		String str = new String("dd");
+		// = String str = "dd"; 와 같은 의미
 
 		int[] arr = { 88, 65, 23, 1, 900, 42, 95 };
 		// 65와 88의 자리를 바꾼다.

@@ -13,12 +13,14 @@ public class MethodMission10 {
 		String[] menuNmArr = { "콜라", "사이다", "환타", "스트라이트", "망고주스", "포도주스" };
 		int[] menuPriceArr = { 1000, 1200, 1300, 1500, 2000, 3000 };
 
-		Drink[] drinkArr = new Drink[6]; /* 여기서 타입은 드링크 타입이다. */
+		Drink[] drinkArr = new Drink[menuNmArr.length]; /* 여기서 타입은 드링크 타입이다. */
 		/*
 		 * 위 문장은 Drink타입의 배열만 올 수 있고 그 배열의 이름은 drinkArr이다. 이 Drink배열의 방을 6개 만들고 그 6개의 방을
 		 * drinkArr에 넣어준다.
 		 */
 		/* 그 6개의 배열의 방을 만들기 위해서 반복문을 사용해 준다. */
+		
+//		Drink drinkArr = new Drink(); -> 주소값은 다 다르지만 모든 방에 다 똑같은 값이 나온다.(마지막 값) 
 		for (int i = 0; i < drinkArr.length; i++) {
 			Drink beverage = new Drink(); /* 여기서 또 Drink 타입만 올 수 있는 drink라는 이름에 변수에 외부 파일 Drink에서 속성을 사용한다. */
 			beverage.nm = menuNmArr[i];
