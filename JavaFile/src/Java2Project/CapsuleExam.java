@@ -22,8 +22,12 @@ public class CapsuleExam {
 	}
 
 }
-class Human {
-	//메소드를 통해서 private이지만 값을 빼내줄 수 있다. 같은 class이기 때문에 가능
+// 생성자 vs 메소드
+// 생성자 : 생성자의 이름은 클래스 이름이랑 같아야한다. 리턴타입이 없다. (void int) 이런 값이 없다 
+// this() vs this.somthing
+// this() 생성자 호출, this. 생성자의 변수를 호출
+class Human { // 상수에는 public을 줄 필요가 없다. ??
+	// 1.메소드와 2. 생성자 통해서 private이지만 값을 빼내줄 수 있다. 같은 class이기 때문에 가능 (메소드 생성자 둘 다 있을 필요는 없다)
 	private int age;
 	private String name;
 	
@@ -37,7 +41,7 @@ class Human {
 	}
 	Human(String name) {
 		/* this(name, 10) */
-		this(); /* 다른 생성자를 호출할 때 쓰는 문법  */
+		this(); /// 다른 생성자를 호출할 때 쓰는 문법  
 		this.name = name;
 	}
 	Human(String name, int age) {
@@ -47,14 +51,14 @@ class Human {
 
 	//setter 와 getter 단축키 ctrl + 3 -> getter -> 엔터
 
-	public void setAge(int age) { //setter
+	public void setAge(int age) { //setter(쓰기) : 세터가 없으면 값을 바꿀 수가 없다 고정값이 됨
 		this.age = age;
 	}
 	public void setName(String name) { //setter
 		this.name = name;
 	}
 	
-	public int getAge() { // getter
+	public int getAge() { // getter(읽기) : 거의 사용함
 		return age;
 	}
 	public String getName() { // getter
