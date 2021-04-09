@@ -17,11 +17,11 @@ class Animal extends Object { /* Stack저장됨, 객체를 만들면 무조건 o
 	String name; /* 기본적인 위치 멤버변수가 가장 먼저오고 그다음 생성자 그다음 메소드가 온다. */
 	int age;
 
-	public Animal(String name, int age) {
-		super();
-		this.name = name;
-		this.age = age;
-	}
+//	public Animal(String name, int age) {
+//		super();
+//		this.name = name;
+//		this.age = age;
+//	}
 
 //	Animal() {
 //		super(); // Last in First out : LIFO super는 가장 위에 위치해야한다. 생성자보다 밑에있으면 x
@@ -34,11 +34,11 @@ class Animal extends Object { /* Stack저장됨, 객체를 만들면 무조건 o
 }
 
 class Cat extends Animal { /* 상속을 받으면 그 부모의 속성을 사용할 수 있다. 실행은 부모것부터 실행이 된다. */
-	Cat() {
-		super("", 0); // 위에 애니멀에서 기본생성자가 없기 때문에 그 밑에 있는 파라미터에 스트링과 인트값을 받는 생성자라고 불러와야하기 때문에 super안에
-						// 적어준다.
-		System.out.println("Cat 생성자");
-	}
+//	Cat() {
+//		super("", 0); // 위에 애니멀에서 기본생성자가 없기 때문에 그 밑에 있는 파라미터에 스트링과 인트값을 받는 생성자라고 불러와야하기 때문에 super안에
+//						// 적어준다.
+//		System.out.println("Cat 생성자");
+//	}
 	@Override //오버라이딩 할때 꼭 적어준다. 
 	void howling() { /* 부모중에 이 howling 메소드가 있어야한다. 부모것의 메소드를 내가 덮어서씌어서 사용하는 방법이 오버라이딩 */
 		System.out.println("야옹");
